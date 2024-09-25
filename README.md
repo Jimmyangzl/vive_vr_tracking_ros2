@@ -1,4 +1,4 @@
-# Description
+## Description
 This package is used to stream the pose of HTC Vive Tracker 3.0 in ROS2. Single (on one hand) or dual (on both hands) trackers can be tracked.
 ## Prerequisite
 1. Hardwares
