@@ -15,7 +15,8 @@ This package is used to stream the pose of HTC Vive Tracker 3.0 in ROS2. Single 
 ```
 python3 src/vr_tracking/vr_tracking/get_tracker_serial.py
 ```
-    If you are using two trackers, check their serials one by one and decide which one is for left or right hand. Copy the corresponding serial into the config file `/src/vr_tracking/config/config.yaml`. If you are only using one tracker, you only need to copy one serial and leave the other one in the config file unchanged. 
+If you are using two trackers, check their serials one by one and decide which one is for left or right hand. Copy the corresponding serial into the config file `/src/vr_tracking/config/config.yaml`. If you are only using one tracker, you only need to copy one serial and leave the other one in the config file unchanged. 
+
 4. Build the package `colcon build` and source it `source install/setup.bash`.
 5. Test the units
 ```
