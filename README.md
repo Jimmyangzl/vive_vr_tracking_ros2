@@ -1,13 +1,13 @@
 ## Description
 This package is used to stream the pose of HTC Vive Tracker 3.0 in ROS2. Single (on one hand) or dual (on both hands) trackers can be tracked.
 - Tracker frame
-<img src='fig/tracker_frame.png' width='100%' >
+<img src='fig/tracker_frame.png' width='50%' >
 The definition of tracker frame is shown in the above figure. There will be a frame calibration when starting the node and the initial frame of the tracker will be regarded as base frame.
 - Output: The streamed pose of tracker is the pose w.r.t. the base frame.
 
 ## Prerequisite
 1. Hardwares
-- HTC Vive VR base station (at least 1)
+- HTC Vive VR base station (at least 1, if using 2 base stations, a synchronizing cable may be needed)
 - HTC Vive Headset (don't need to wear it but it needs to be in the view of a base station)
 - HTC Vive Tracker 3.0 (1 or 2)
 2. Softwares
