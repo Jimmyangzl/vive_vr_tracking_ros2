@@ -1,0 +1,8 @@
+left_tracker_serial: "LHR-E4E7C16F"
+left_topic: '/cartesian_impedance/pose_desired'
+right_tracker_serial: "LHR-12D38AEC"
+right_topic: '/cartesian_impedance/pose_desired_righ'
+
+freq: 50.0
+translational_gain: 2.0
+quat: False
