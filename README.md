@@ -1,5 +1,10 @@
 ## Description
 This package is used to stream the pose of HTC Vive Tracker 3.0 in ROS2. Single (on one hand) or dual (on both hands) trackers can be tracked.
+- Tracker frame
+<img src='fig/tracker_frame.png' width='100%' >
+The definition of tracker frame is shown in the above figure. There will be a frame calibration when starting the node and the initial frame of the tracker will be regarded as base frame.
+- Output: The streamed pose of tracker is the pose w.r.t. the base frame.
+
 ## Prerequisite
 1. Hardwares
 - HTC Vive VR base station (at least 1)
@@ -27,6 +32,7 @@ If all the tests are passed, you can start the streaming node:
 ```
 ros2 run vr_tracking tracker_pub
 ```
+Notice: Please follow the instruction shown in the terminal and hold the the tracker still before the frame calibration is done! When you see `left/right frame calibrated`, you can move the tracker.
 ## Customize arguments
 The arguments that can be customized are defined in the config file `/src/vr_tracking/config/config.yaml`. There are two ways to configure them.
 1. Directly change the arguments in config file.
