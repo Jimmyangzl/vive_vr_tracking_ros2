@@ -17,7 +17,7 @@ This package is used to stream the pose of HTC Vive Tracker 3.0 in ROS2. Single 
 - ROS2 humble installed on Ubuntu 22.04
 - Steam VR
 ## Get started
-1. clone the repo and `cd vr_tracking`.
+1. Create a workspace and a src folder in the workspace (e.g. `mkdir vr_ws && cd vr_ws && mkdir src`). Clone the repo under `src` then go to workspace.
 2. Turn on the VR devices and pair the trackers in Steam VR.
 3. Get the tracker serial with
 ```
