@@ -43,4 +43,6 @@ The arguments that can be customized are defined in the config file `/src/vr_tra
 ```
 ros2 run vr_tracking tracker_pub --freq 30 --quat True
 ```
+## Credits
+The file `vr_tracking/track.py` is forked from [Vive_Tracker](https://github.com/snuvclab/Vive_Tracker).
 
