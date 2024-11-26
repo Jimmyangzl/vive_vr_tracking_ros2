@@ -16,13 +16,14 @@ This package is used to stream the pose of HTC Vive Tracker 3.0 in ROS2. Single 
 2. Softwares
 - ROS2 humble installed on Ubuntu 22.04
 - Steam VR
+- Possible dependencies: 'openvr' and 'IPython'
 ## Getting started
 1. Create a workspace and a src folder in the workspace (e.g. `mkdir vr_ws && cd vr_ws && mkdir src`). Clone the repo under `src` then go to workspace.
 2. Turn on the VR devices and pair the trackers in Steam VR. You should be able to view the VR setup similar to this:
 <img src='fig/vr_setup.png' width='50%' >
 3. Get the tracker serial with
 ```
-python3 src/vr_tracking/vr_tracking/get_tracker_serial.py
+python3 src/vive_vr_tracking_ros2/vr_tracking/get_tracker_serial.py
 ```
 If you are using two trackers, check their serials one by one and decide which one is for left or right hand. Copy the corresponding serial into the config file `/src/vr_tracking/config/config.yaml`. If you are only using one tracker, you only need to copy one serial and leave the other one in the config file unchanged. 
 
