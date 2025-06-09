@@ -6,7 +6,7 @@ This package is used to stream the pose of HTC Vive Tracker 3.0 in ROS2. Single 
 2. Streamed pose: The streamed pose of tracker is the pose w.r.t. the base frame.
 3. Output format: The streamed pose is published with ROS2 msg `std_msgs/msg/Float64MultiArray.msg`. Two kinds of orientation representation are possible: orienation matrix and quaternion. Check **Customize arguments** on how to choose the orientation representation. The data in msg is organized as
     - orienation matrix: `[x,y,z,r11,r21,r31,r12,r22,r32,r13,r23,r33]` (matrix reshaped in column-first way).
-    - quaternion: `[x,y,z,r11,qw,qx,qy,qz]`.
+    - quaternion: `[x,y,z,qw,qx,qy,qz]`.
 
 ## Prerequisite
 1. Hardwares
